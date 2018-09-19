@@ -1,0 +1,63 @@
+.StepThree {
+    &-choices {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        &-item {
+            border: none;
+            background: #ffffff;
+            flex-basis: 50%;
+            margin-right: 20px;
+            padding: 30px 15px;
+            cursor: pointer;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+            border: 3px solid transparent;
+            outline: none;
+            &.is-active {
+                border: 3px solid #ececec;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            img {
+                display: block;
+                margin: 0 auto 5px;
+            }
+        }
+    }
+    &-grid {
+        &-first {
+            .FormGroup {
+                width: 100%;
+            }
+        }
+        &-last {
+            display: flex;
+            justify-content: space-between;
+            .FormGroup {
+                flex-basis: 50%;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &-submit {
+        width: 100%;
+        border: none;
+        padding: 15px;
+        text-transform: uppercase;
+        background: #000000;
+        color: #ffffff;
+        font-weight: bold;
+        font-family: 'Montserrat', Arial, sans-serif;
+        margin-top: 30px;
+        cursor: pointer;
+        &:disabled {
+            opacity: 0.7;
+            cursor: not-allowed;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.Collapse {
+  margin-top: 50px; }
+  .Collapse-item {
+    margin-bottom: 40px; }
+    .Collapse-item-button {
+      background: #f7f7f7;
+      padding: 40px 60px;
+      transition: all 0.5s;
+      border: none;
+      font-weight: bold;
+      width: 100%;
+      text-align: left;
+      font-family: 'Montserrat', Arial, sans-serif;
+      outline: none; }
+      .Collapse-item-button-circle {
+        display: inline-block;
+        border-radius: 100%;
+        margin-right: 10px;
+        background: #d8d8d8;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center; }
+      .Collapse-item-button:disabled {
+        cursor: not-allowed; }
+    .Collapse-item-content {
+      background: #f7f7f7;
+      min-height: 0;
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      font-size: 0;
+      transition: all 0.5s; }
+      .Collapse-item-content input {
+        transition: all 0.5s;
+        padding: 0;
+        height: 0; }
+    .Collapse-item.is-active .Collapse-item-button {
+      background: #f7f7f7;
+      padding: 40px 60px 10px; }
+      @media screen and (max-width: 970px) {
+        .Collapse-item.is-active .Collapse-item-button {
+          padding: 40px 20px 10px; } }
+    .Collapse-item.is-active .Collapse-item-content {
+      max-height: 999999px;
+      height: initial;
+      padding: 20px 60px 40px;
+      font-size: 14px;
+      font-family: 'Montserrat', Arial, sans-serif; }
+      @media screen and (max-width: 970px) {
+        .Collapse-item.is-active .Collapse-item-content {
+          padding: 20px 20px 40px; } }
+      .Collapse-item.is-active .Collapse-item-content input {
+        padding: 14px 15px;
+        height: initial; }

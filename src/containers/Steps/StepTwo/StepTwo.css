@@ -1,0 +1,17 @@
+.StepTwo-grid-first {
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 970px) {
+    .StepTwo-grid-first {
+      display: block; } }
+  .StepTwo-grid-first .FormGroup {
+    flex-basis: 33.33%;
+    margin-right: 20px; }
+    @media screen and (max-width: 970px) {
+      .StepTwo-grid-first .FormGroup {
+        width: 100%; } }
+    .StepTwo-grid-first .FormGroup:last-child {
+      margin-right: 0; }
+
+.StepTwo-grid-last .FormGroup {
+  width: 100%; }

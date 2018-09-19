@@ -1,0 +1,14 @@
+.StepOne-grid-last {
+  display: flex;
+  justify-content: space-between; }
+  @media screen and (max-width: 970px) {
+    .StepOne-grid-last {
+      display: block; } }
+  .StepOne-grid-last .FormGroup {
+    flex-basis: 50%;
+    margin-right: 20px; }
+    @media screen and (max-width: 970px) {
+      .StepOne-grid-last .FormGroup {
+        width: 100%; } }
+    .StepOne-grid-last .FormGroup:last-child {
+      margin-right: 0; }

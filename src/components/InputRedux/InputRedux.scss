@@ -1,0 +1,39 @@
+.InputRedux {
+    &.-text {
+        input {
+            width: calc(100% - 35px);
+            padding: 14px 15px;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 12px;
+        }
+    }
+    &.-select {
+        select {
+            width: 100%;
+            padding: 14px 15px;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 12px;
+        }
+    }
+    &.-checkbox {
+        input {
+            appearance: none;
+            border: 2px solid #000000;
+            width: 20px;
+            height: 20px;
+            position: relative;
+            &:checked::after {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                content: '';
+                display: block;
+                background-image: url('../../images/check.png');
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}

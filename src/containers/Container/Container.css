@@ -1,0 +1,6 @@
+.Container {
+  max-width: 940px;
+  margin: 0 auto; }
+  @media screen and (max-width: 970px) {
+    .Container {
+      padding: 0 15px; } }

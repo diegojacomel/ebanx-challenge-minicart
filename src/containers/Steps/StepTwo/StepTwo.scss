@@ -1,0 +1,26 @@
+.StepTwo {
+    &-grid {
+        &-first {
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 970px) {
+                display: block
+            }
+            .FormGroup {
+                flex-basis: 33.33%;
+                margin-right: 20px;
+                @media screen and (max-width: 970px) {
+                    width: 100%;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+        &-last {
+            .FormGroup {
+                width: 100%;
+            }
+        }
+    }
+}
